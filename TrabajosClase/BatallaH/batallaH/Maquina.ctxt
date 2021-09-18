@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Maquina
+comment1.params=
+comment1.target=Maquina()
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Maquina,\r\n
+comment2.params=
+comment2.target=void\ alNorte()
+comment2.text=\r\n\ Mueve\ la\ maquina\ al\ norte\r\n
+numComments=3
