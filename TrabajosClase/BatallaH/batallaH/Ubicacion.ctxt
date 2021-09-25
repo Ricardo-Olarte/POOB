@@ -1,3 +1,12 @@
 #BlueJ class context
 comment0.target=Ubicacion
-numComments=1
+comment1.params=longitud\ latitud
+comment1.target=Ubicacion(int,\ int)
+comment1.text=\r\n\ \r\n
+comment2.params=
+comment2.target=void\ alNorte()
+comment2.text=\r\n\ Cambia\ la\ longitud\ y\ latitud,\ en\ sentido\ norte\r\n
+comment3.params=dLon\ dLat
+comment3.target=void\ avance(int,\ int)
+comment3.text=\r\n\ mueve\ la\ longitud\ y\ latitud\ a\ una\ distancia\ definida\r\n\ @param\ int\ dLon,\ distancia\ definida\ en\ longitud\r\n\ @param\ int\ dLat,\ distancia\ definida\ en\ latitud\r\n
+numComments=4
