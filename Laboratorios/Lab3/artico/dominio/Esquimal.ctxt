@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Esquimal
+comment1.params=artico\ name\ posicionx\ posiciony
+comment1.target=Esquimal(Artico,\ java.lang.String,\ int,\ int)
+comment2.params=
+comment2.target=void\ corte()
+comment3.params=
+comment3.target=void\ accion()
+comment4.params=
+comment4.target=void\ actue()
+comment5.params=
+comment5.target=java.lang.String\ mensaje()
+numComments=6

@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Artico
+comment1.params=
+comment1.target=Artico\ demeArtico()
+comment10.params=
+comment10.target=void\ accion()
+comment11.params=
+comment11.target=void\ improvisen()
+comment12.params=
+comment12.target=void\ corten()
+comment2.params=
+comment2.target=void\ nuevoArtico()
+comment3.params=d
+comment3.target=void\ cambieArtico(Artico)
+comment4.params=
+comment4.target=Artico()
+comment5.params=
+comment5.target=void\ algunosEnArtico()
+comment6.params=n
+comment6.target=EnArtico\ demeEnArtico(int)
+comment7.params=e
+comment7.target=void\ adicione(EnArtico)
+comment8.params=
+comment8.target=int\ numeroEnArtico()
+comment9.params=e
+comment9.target=boolean\ enPoloNorte(EnArtico)
+numComments=13
