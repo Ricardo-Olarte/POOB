@@ -1,6 +1,4 @@
- 
-
-public abstract class Maquina{
+ public abstract class Maquina{
     public Ubicacion ubicacion;
     
     /**
@@ -27,7 +25,14 @@ public abstract class Maquina{
     }
     
     /**
-     * 
+     * consulta si la maquina pude afectarse por una explosion dada en la coordenada
+     * @param int longitud
+     * @param int latitud
      */
     public abstract boolean seranDestruidas(int longitud, int latitud);
+    
+    /**
+     * consulta si la maquina es debil
+     */
+    public abstract boolean esDebil();
 }

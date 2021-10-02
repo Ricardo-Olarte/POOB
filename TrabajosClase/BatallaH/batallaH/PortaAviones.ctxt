@@ -2,6 +2,11 @@
 comment0.target=PortaAviones
 comment1.params=
 comment1.target=PortaAviones()
+comment1.text=\r\n\ Constructor\ de\ PortaAviones\r\n
 comment2.params=longitud\ latitud
 comment2.target=boolean\ seranDestruidas(int,\ int)
-numComments=3
+comment2.text=\r\n\ @return\ boolean\ si\ el\ portaAvion\ se\ ve\ afectado\ por\ la\ explosion\r\n\ @param\ int\ longitud\r\n\ @param\ int\ latitud\r\n
+comment3.params=
+comment3.target=boolean\ esDebil()
+comment3.text=\r\n\ @return\ boolean,\ si\ el\ PortaAvion\ es\ debil,\ solo\ si\ el\ barco\ es\ debil\ o\ un\ avion\ en\ aire\ es\ debil\r\n
+numComments=4

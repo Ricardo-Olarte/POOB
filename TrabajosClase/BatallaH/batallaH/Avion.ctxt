@@ -2,7 +2,11 @@
 comment0.target=Avion
 comment1.params=
 comment1.target=Avion()
+comment1.text=\r\n\ Constructor\ de\ Avion\r\n
 comment2.params=longitud\ latitud
 comment2.target=boolean\ seranDestruidas(int,\ int)
-comment2.text=\r\n\ @return\r\n\ @param\r\n\ @param\r\n
-numComments=3
+comment2.text=\r\n\ @return\ boolean,\ si\ el\ avion\ es\ afectado\ por\ la\ explosion,\ no\ le\ afecta\ si\ esta\ en\ aire\r\n\ @param\ int\ longitud\r\n\ @param\ int\ latitud\r\n
+comment3.params=
+comment3.target=boolean\ esDebil()
+comment3.text=\r\n\ @return\ boolean,\ indicando\ si\ el\ avion\ es\ debil,\ solo\ si\ no\ tiene\ piloto\r\n
+numComments=4
