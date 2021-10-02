@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 
+/**
+ * Clase flota, contiene maquinas y marinos
+ */
 public class Flota {
     private Tablero tablero;
     private String nombre;

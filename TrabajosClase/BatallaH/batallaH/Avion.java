@@ -1,4 +1,8 @@
 import java.util.*;
+
+/**
+ * Clase avion, herencia de maquina, quien ataca en aire, dirigida por piloto o copiloto
+ */
 public class Avion extends Maquina{
     private String placa;
     private boolean enAire;
@@ -32,5 +36,12 @@ public class Avion extends Maquina{
     @Override
     public boolean esDebil(){
         return Objects.isNull(piloto);
+    }
+    
+    /**
+     * @return boolean, si el avion se encuentra en aire
+     */
+    public boolean enAire(){
+        return enAire;
     }
 }

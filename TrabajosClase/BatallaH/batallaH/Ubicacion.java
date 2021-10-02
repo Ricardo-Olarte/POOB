@@ -1,11 +1,12 @@
-
-
+/**
+ * Indica un lugar del tablero para la maquina
+ */
 public class Ubicacion {
     private int longitud;
     private int latitud;
     
     /**
-     * 
+     * Constructor de la Clase Ubicacion
      */
     public Ubicacion(int longitud, int latitud){
         this.longitud = longitud;

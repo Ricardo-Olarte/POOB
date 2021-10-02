@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=Avion
+comment0.text=\r\n\ Clase\ avion,\ herencia\ de\ maquina,\ quien\ ataca\ en\ aire,\ dirigida\ por\ piloto\ o\ copiloto\r\n
 comment1.params=
 comment1.target=Avion()
 comment1.text=\r\n\ Constructor\ de\ Avion\r\n
@@ -9,4 +10,7 @@ comment2.text=\r\n\ @return\ boolean,\ si\ el\ avion\ es\ afectado\ por\ la\ exp
 comment3.params=
 comment3.target=boolean\ esDebil()
 comment3.text=\r\n\ @return\ boolean,\ indicando\ si\ el\ avion\ es\ debil,\ solo\ si\ no\ tiene\ piloto\r\n
-numComments=4
+comment4.params=
+comment4.target=boolean\ enAire()
+comment4.text=\r\n\ @return\ boolean,\ si\ el\ avion\ se\ encuentra\ en\ aire\r\n
+numComments=5

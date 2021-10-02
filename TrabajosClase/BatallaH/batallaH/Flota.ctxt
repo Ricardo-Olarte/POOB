@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=Flota
+comment0.text=\r\n\ Clase\ flota,\ contiene\ maquinas\ y\ marinos\r\n
 comment1.params=
 comment1.target=Flota()
 comment1.text=\r\n\ Constructor\ de\ la\ clase\ Flota,\ quien\ tiene\ varias\ maquinas\r\n

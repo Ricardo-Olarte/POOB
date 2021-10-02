@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 
+/**
+ * Clase Barco, heredada de maquina, contiene marinos
+ */
 public class Barco extends Maquina{
     private int numero;
     private ArrayList<Marino> marinos;
@@ -30,6 +33,6 @@ public class Barco extends Maquina{
      */
     @Override
     public boolean esDebil(){
-        return false;
+        return marinos.size() <= 5;
     }
 }

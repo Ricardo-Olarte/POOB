@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 
+/**
+ * Clase tablero contiene flotas, un juego naval
+ */
 public class Tablero {
     private ArrayList<Flota> flotas;
      

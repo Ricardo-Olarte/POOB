@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=Barco
+comment0.text=\r\n\ Clase\ Barco,\ heredada\ de\ maquina,\ contiene\ marinos\r\n
 comment1.params=
 comment1.target=Barco()
 comment1.text=\r\n\ Constructor\ de\ Barco\r\n

@@ -1,4 +1,7 @@
- public abstract class Maquina{
+/**
+ * Clase maquina, se describe como una elemento de ataque o defensa
+ */
+public abstract class Maquina{
     public Ubicacion ubicacion;
     
     /**
