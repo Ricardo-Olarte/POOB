@@ -13,7 +13,8 @@ public class Flota {
      * Constructor de la clase Flota, quien tiene varias maquinas
      */
     public Flota(){
-    
+        marinos = new ArrayList<Marino>();
+        maquinas = new ArrayList<Maquina>();
     }
     
     /**
