@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Tag
+comment0.text=\r\n\ @Autor\ Acosta\r\n\ @Autor\ Olarte\r\n\ @Version\ 1.0\ -\ 2021-2\r\n
+comment1.params=name\ color
+comment1.target=Tag(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Create\ a\ tag\r\n\ @param\ name\ -\ Tag\ name\r\n\ @param\ color\ -\ Tag\ color\r\n
+numComments=2

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Socket
+comment0.text=\r\n\ @Autor\ Acosta\r\n\ @Autor\ Olarte\r\n\ @Version\ 1.0\ -\ 2021-2\r\n
+comment1.params=host\ port
+comment1.target=Socket(java.lang.String,\ int)
+comment1.text=\r\n\ Constructor\ of\ Socket\r\n\ @param\ String\ host\r\n\ @param\ int\ port,\ its\ a\ place\ server\ where\ the\ devices\ connected\r\n
+comment2.params=
+comment2.target=void\ start()
+comment2.text=\r\n\ \r\n
+comment3.params=fromPhone\ toPhone\ chatName\ text
+comment3.target=void\ sendMessage(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment3.text=\r\n\ @param\ String\ fromPhone\r\n\ @param\ String\ toPhone\r\n\ @param\ String\ chatName\r\n\ @param\ String\ text\r\n
+comment4.params=listener
+comment4.target=void\ addListener(java.lang.Object)
+comment4.text=\r\n\ @param\ Object\ listener\r\n
+comment5.params=
+comment5.target=void\ stop()
+comment5.text=\r\n\ \r\n
+comment6.params=toPhone\ chatName\ messageId
+comment6.target=boolean\ deleteMessage(java.lang.String,\ java.lang.String,\ int)
+comment6.text=\r\n\ @return\ boolean,\ if\ the\ message\ deleted\r\n\ @param\ toPhone\r\n\ @param\ chatName\r\n\ @param\ int\ messageId\r\n
+numComments=7
