@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ComboOfertasExcepcion
+comment0.text=\r\n\ Es\ una\ clase\ de\ excepciones\ ComboOfertasExcepcion.\r\n\ \r\n\ @author\ Acosta\r\n\ @author\ Olarte\r\n\ @version\ 2021-2\r\n
+comment1.params=mensaje
+comment1.target=ComboOfertasExcepcion(java.lang.String)
+comment1.text=\r\n\ @param\ mensaje,\ indica\ el\ mensaje\ de\ la\ excepcion,\ para\ mostrar\ cuales\ de\ los\ errores\ se\ cometi\u00F3\r\n
+numComments=2
