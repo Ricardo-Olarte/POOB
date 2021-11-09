@@ -2,8 +2,8 @@ package Presentación;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+import java.awt.event.*;
+import java.io.File;
 
 public class SenkuGUI extends JFrame {
 
@@ -13,6 +13,7 @@ public class SenkuGUI extends JFrame {
     private JMenuBar menuBar;
     private JMenu archivo;
     private JMenuItem nuevo,abrir,salvar,salir;
+    private JFileChooser fileChooser;
 
     /**
      * Constructor de la clase SenkuGUI
@@ -29,7 +30,11 @@ public class SenkuGUI extends JFrame {
         this.setTitle("Senku");
         this.setSize( ANCHO/2,ALTO/2);
         setLocationRelativeTo(null);
+
+        fileChooser = new JFileChooser();
+
         prepareElementosMenu();
+        prepareAccionesMenu();
     }
 
     /**
@@ -65,6 +70,37 @@ public class SenkuGUI extends JFrame {
                 accionCerrar();
             }
         });
+    }
+
+    /**
+     * Prepara las acciones del menu
+     */
+    public void prepareAccionesMenu(){
+        salir.addActionListener( new ActionListener(){
+            public void actionPerformed( ActionEvent event ){
+                accionCerrar();
+            }
+        });
+
+        abrir.addActionListener( new ActionListener(){
+            public void actionPerformed( ActionEvent event ){
+                accionAbrir();
+            }
+        });
+    }
+
+    /**
+     * Abre un archivo
+     */
+    public void accionAbrir(){
+        fileChooser.setVisible(true);
+        int r = fileChooser.showOpenDialog(abrir);
+        if( r == fileChooser.APPROVE_OPTION ){
+            File file = fileChooser.getSelectedFile();
+            JOptionPane.showMessageDialog(abrir,"El archivo de nombre "+archivo.getName()+" que se trata de abrir en la ruta "+archivo+"\n NO se pudo abrir ya que esta la funcion se encuentra en construccion.");
+        }
+
+        fileChooser.setVisible(false);
     }
 
     /**
