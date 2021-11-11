@@ -3,17 +3,23 @@ package Presentación;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.File;
+import java.io.*;
 
 public class SenkuGUI extends JFrame {
 
+    /*Atributos tamaño*/
     private static final Dimension DIMENSION = Toolkit.getDefaultToolkit().getScreenSize();
     private static final int ALTO = DIMENSION.height;
     private static final int ANCHO = DIMENSION.width;
+
+    /*Menu*/
     private JMenuBar menuBar;
     private JMenu archivo;
     private JMenuItem nuevo,abrir,salvar,salir;
     private JFileChooser fileChooser;
+
+    /*Ventana*/
+    private JPanel ventanaPrincipal;
 
     /**
      * Constructor de la clase SenkuGUI
@@ -33,8 +39,12 @@ public class SenkuGUI extends JFrame {
 
         fileChooser = new JFileChooser();
 
+        ventanaPrincipal = new JPanel();
+        ventanaPrincipal.setLayout(new CardLayout(0,0));
+
         prepareElementosMenu();
         prepareAccionesMenu();
+        prepareElementosTablero();
     }
 
     /**
@@ -60,6 +70,18 @@ public class SenkuGUI extends JFrame {
     }
 
     /**
+     * Prepara el tablero incial
+     */
+    public void prepareElementosTablero(){
+
+    }
+
+    /**
+     *
+     */
+    public void refresque(){}
+
+    /**
      * Prepara las acciones
      */
     public void prepareAcciones(){
@@ -76,15 +98,21 @@ public class SenkuGUI extends JFrame {
      * Prepara las acciones del menu
      */
     public void prepareAccionesMenu(){
-        salir.addActionListener( new ActionListener(){
-            public void actionPerformed( ActionEvent event ){
-                accionCerrar();
-            }
-        });
-
         abrir.addActionListener( new ActionListener(){
             public void actionPerformed( ActionEvent event ){
                 accionAbrir();
+            }
+        });
+
+        salvar.addActionListener( new ActionListener(){
+            public void actionPerformed( ActionEvent event ){
+                accionSalvar();
+            }
+        });
+
+        salir.addActionListener( new ActionListener(){
+            public void actionPerformed( ActionEvent event ){
+                accionCerrar();
             }
         });
     }
@@ -95,12 +123,20 @@ public class SenkuGUI extends JFrame {
     public void accionAbrir(){
         fileChooser.setVisible(true);
         int r = fileChooser.showOpenDialog(abrir);
-        if( r == fileChooser.APPROVE_OPTION ){
+        if( r == JFileChooser.APPROVE_OPTION){
             File file = fileChooser.getSelectedFile();
-            JOptionPane.showMessageDialog(abrir,"El archivo de nombre "+archivo.getName()+" que se trata de abrir en la ruta "+archivo+"\n NO se pudo abrir ya que esta la funcion se encuentra en construccion.");
+            JOptionPane.showMessageDialog(abrir,"El archivo de nombre "+archivo.getName()+" que se trata de abrir en la ruta "+archivo+"\n Esta la función se encuentra en construcción.");
         }
-
         fileChooser.setVisible(false);
+    }
+
+    /**
+     *
+     */
+    public void accionSalvar(){
+        fileChooser.showSaveDialog(this);
+        File file = fileChooser.getSelectedFile();
+        JOptionPane.showMessageDialog(salvar,"El archivo de nombre "+archivo.getName()+" que se trata de salvar, no puede hacer modificaciones, esta la función se encuentra en construcción.");
     }
 
     /**
@@ -113,6 +149,10 @@ public class SenkuGUI extends JFrame {
         }
     }
 
+    /**
+     * Main
+     * @param args
+     */
     public static void main(String[] args) {
         SenkuGUI ventana = new SenkuGUI();
         ventana.setVisible(true);
