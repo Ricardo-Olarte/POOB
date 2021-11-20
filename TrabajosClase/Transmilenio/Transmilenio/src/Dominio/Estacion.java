@@ -9,6 +9,8 @@ package Dominio;
 public class Estacion {
 
     private String nombre;
+    private String nivelOcupacion;
+    private String tiempoEspera;
 
     /**
      * Constructor de Estacion
@@ -26,11 +28,4 @@ public class Estacion {
         return nombre;
     }
 
-    /**
-     *
-     * @return
-     */
-    public int getTiempoEspera(){
-        return -1;
-    }
 }

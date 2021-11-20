@@ -1,8 +1,6 @@
 package Dominio;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
+import java.util.*;
 
 /**
  * Sistema de transmilenio
@@ -14,16 +12,14 @@ import java.util.LinkedList;
 public class Sistema{
 
     private LinkedList<Estacion> estaciones;
-    private ArrayList<Ruta> rutas;
-    private HashMap<String[],Integer> rutasT;
+    private HashMap<String,String[]> rutas;
 
     /**
      * Constructor del sistema de transmilenio
      */
     public Sistema(){
         estaciones = new LinkedList<Estacion>();
-        rutas = new ArrayList<Ruta>();
-        rutasT = new HashMap<String[],Integer>();
+        rutas = new HashMap<String,String[]>();
     }
 
     /**
@@ -43,22 +39,51 @@ public class Sistema{
     }
 
     /**
+     * El numero de paradas para ir de una estacion a otra de una misma ruta
      * @param nombreRuta
      * @param estacion1
      * @param estacion2
      * @return
      */
     public int paradas(String nombreRuta, String estacion1, String estacion2){
-        String[] temp = {nombreRuta,estacion1,estacion2};
-        if(rutasT.containsKey(temp)){
-            return rutasT.get(temp);
-        }
-        for(Ruta r:rutas){
-            if(r.getNombre()==nombreRuta){
-                int numeroParadas = r.completarRuta(estacion1,estacion2);
-                rutasT.put(temp,numeroParadas);
+        int contador = 0;
+        if(rutas.containsKey(nombreRuta)){
+            String[] temp = rutas.get(nombreRuta);
+            for(int i=0;i<temp.length;i++){
+                if(estacion1==temp[i]){
+                    contador=i;
+                }
+                if(estacion2==temp[i]){
+                    contador=i-contador;
+                }
             }
         }
-        return rutasT.get(temp);
+        return contador;
     }
+
+    /**
+     * Nombre de las rutas que comparten mismas estaciones sin transbordos
+     * @param estacion1
+     * @param estacion2
+     * @return
+     */
+    public LinkedList<String> rutasSinTransbordos(String estacion1, String estacion2){
+        LinkedList<String> rutasVarias = new LinkedList<String>();
+        for(String key:rutas.keySet()){
+            String[] temp = rutas.get(key);
+            for(int i=0;i<temp.length;i++){
+                if(estacion1==temp[i]){
+                    for(int j=0;j<temp.length;j++){
+                        if(estacion2==temp[j]){
+                            rutasVarias.add(key);
+                        }
+                    }
+                }
+            }
+        }
+        Collections.sort(rutasVarias);
+        return rutasVarias;
+    }
+
+
 }
